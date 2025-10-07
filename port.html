@@ -1,0 +1,240 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Varinder Yadav — Frontend & Django Developer</title>
+  <meta name="description" content="Portfolio of Varinder Yadav — Frontend & Python Django Developer. HTML, CSS, JS, React, Tailwind, Python, Django." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <style>
+    /* --- Simple modern CSS portfolio (single file) --- */
+    :root{
+      --bg:#0f172a; /* dark navy */
+      --card:#0b1220;
+      --muted:#94a3b8;
+      --accent:#38bdf8;
+      --glass: rgba(255,255,255,0.03);
+      --radius:12px;
+      --maxw:1100px;
+      --mono: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{font-family:var(--mono);margin:0;background:linear-gradient(180deg,var(--bg),#071028 120%);color:#e6eef8;line-height:1.45}
+    .container{max-width:var(--maxw);margin:32px auto;padding:24px}
+
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .avatar{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7dd3fc);display:flex;align-items:center;justify-content:center;color:#07203a;font-weight:700;font-size:18px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+    nav a:hover{color:var(--accent)}
+
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:center;margin-top:28px}
+    .card{background:var(--card);padding:26px;border-radius:var(--radius);box-shadow:0 6px 30px rgba(2,6,23,0.6)}
+    h1{margin:0;font-size:28px}
+    .role{color:var(--accent);margin-top:6px;font-weight:600}
+    .bio{color:var(--muted);margin-top:14px}
+
+    .skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+    .skill{background:var(--glass);padding:8px 12px;border-radius:10px;color:var(--muted);font-weight:600;font-size:13px}
+
+    .profile-card{display:flex;flex-direction:column;gap:14px}
+    .contact a{display:inline-block;margin-right:8px;color:var(--muted);text-decoration:none}
+
+    section.projects{margin-top:30px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .project{padding:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:10px}
+    .project img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+    .p-meta{display:flex;align-items:center;justify-content:space-between;margin-top:8px}
+    .tech{color:var(--muted);font-size:13px}
+    .btn{display:inline-block;padding:8px 12px;border-radius:8px;background:linear-gradient(90deg,var(--accent),#60a5fa);color:#07203a;font-weight:700;text-decoration:none;margin-left:8px}
+
+    footer{margin-top:40px;text-align:center;color:var(--muted);padding:18px}
+
+    /* responsive */
+    @media (max-width:1000px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:640px){
+      header{flex-direction:column;align-items:flex-start}
+      .grid{grid-template-columns:1fr}
+      .avatar{width:48px;height:48px}
+    }
+
+    /* small utility */
+    .muted{color:var(--muted)}
+    .small{font-size:13px}
+    .divider{height:1px;background:rgba(255,255,255,0.03);margin:14px 0;border-radius:6px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">VY</div>
+        <div>
+          <div style="font-weight:800">Varinder Yadav</div>
+          <div class="muted small">Frontend & Python Django Developer</div>
+        </div>
+      </div>
+      <nav>
+        <a href="about.html">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="https://github.com/varinderyadav" target="_blank">GitHub</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="card">
+          <h1>Hello — I’m Varinder 👋</h1>
+          <div class="role">Frontend & Python Django Developer</div>
+          <p class="bio">I’m a passionate Frontend and Python Django Developer who loves transforming ideas into interactive, responsive web experiences. With a strong foundation in HTML, CSS, JavaScript, React, and Django, I build beautiful interfaces and reliable backend logic. I focus on clean, maintainable code and fast, accessible user experiences.</p>
+
+          <div class="skills" aria-label="skills list">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React</div>
+            <div class="skill">Tailwind</div>
+            <div class="skill">Git</div>
+            <div class="skill">Python</div>
+            <div class="skill">Django</div>
+            <div class="skill">Java</div>
+          </div>
+
+          <div style="margin-top:18px">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn" href="mailto:your-email@example.com">Contact Me</a>
+          </div>
+        </div>
+
+        <aside class="card profile-card">
+          <div>
+            <h3 style="margin:0">Profile</h3>
+            <div class="muted small">Frontend & Python Django developer — focused on responsive UI and clean backend integration.</div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div>
+            <div style="font-weight:700">Contact</div>
+            <div class="muted small">Email: <a href="mailto:your-email@example.com" style="color:var(--accent);text-decoration:none">your-email@example.com</a></div>
+            <div class="muted small">LinkedIn: <a href="https://www.linkedin.com/in/varinder-yadav-a933bb344/" target="_blank" style="color:var(--accent);text-decoration:none">varinder-yadav</a></div>
+            <div class="muted small">GitHub: <a href="https://github.com/varinderyadav" target="_blank" style="color:var(--accent);text-decoration:none">@varinderyadav</a></div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div>
+            <div style="font-weight:700">Resume</div>
+            <div class="muted small">Download a PDF resume: <a href="C:\Users\vy849\OneDrive\Desktop\new1.pdf" style="color:var(--accent);text-decoration:none">Click Here</a></div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="projects" class="projects">
+        <h2 style="margin-bottom:8px">Projects</h2>
+
+        <div class="grid" style="margin-top:12px">
+          <!-- Project 1 -->
+          <article class="project card">
+            <img src="C:\Users\vy849\OneDrive\Desktop\frontent projrct image.jpeg" alt="Project 1 screenshot" />
+            <h3 style="margin:8px 0 4px 0">Get Repo Of every famous Developer</h3>
+            <div class="tech">HTML • CSS • JavaScript</div>
+            <p class="muted small">A clean, responsive marketing landing page demonstrating pixel-perfect layout, animations, and accessibility best practices.</p>
+            <div class="p-meta">
+              <div class="muted small">Role:Frontend developer</div>
+              <div>
+                <a class="btn" href="#" target="_blank">Live</a>
+                <a class="btn" href="https://github.com/varinderyadav" target="_blank">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project card">
+            <img src="C:\Users\vy849\OneDrive\Desktop\receipe project image.jpg" alt="Project 2 screenshot" />
+            <h3 style="margin:8px 0 4px 0">Receipe_Project</h3>
+            <div class="tech">Python • Django • React • Fetch API • HTML • CSS • javascript • PostgreeSQL</div>
+            <p class="muted small"> Built a Recipe Management Web Application using Django and Python, with SQLite as backend.
+                                    Implemented full CRUD operations: users can create, view, update, and delete recipes by ID.
+                                    Developed user registration, login, and logout functionality to manage access and personalize the experience</p>
+                                                <div class="p-meta">
+              <div class="muted small">Full stack</div>
+              <div>
+                <a class="btn" href="#" target="_blank">Live</a>
+                <a class="btn" href="https://github.com/varinderyadav" target="_blank">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project card">
+            <img src="C:\Users\vy849\OneDrive\Desktop\tweet project image.jpeg" alt="Project 3 screenshot" />
+            <h3 style="margin:8px 0 4px 0">Django Blog — Full Stack</h3>
+            <div class="tech">Python • Django • React • Fetch API • HTML • CSS • javascript • PostgreeSQL</div>
+            <p class="muted small"> Developed SocialSphere, a Twitter-like microblogging web application using Django.
+                                    Implemented user authentication, tweet creation with images, and a search feature to filter posts.
+                                    Designed responsive UI with Bootstrap and integrated media handling for image uploads
+            </p>
+            <div class="p-meta">
+              <div class="muted small">Role: Full stack</div>
+              <div>
+                <a class="btn" href="#" target="_blank">Live</a>
+                <a class="btn" href="https://github.com/varinderyadav" target="_blank">Code</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div style="margin-top:12px" class="muted small">Tip: Click <strong>Code</strong> to link directly to each project's repository, and replace the <em>Live</em> link with your deployed demo.</div>
+      </section>
+
+      <section id="contact" style="margin-top:32px">
+        <h2>Contact</h2>
+        <p class="muted small">Interested in working together? Send me a message — or email me directly.</p>
+
+        <div class="card" style="display:flex;gap:18px;flex-direction:column;max-width:700px">
+          <form id="contactForm">
+            <div style="display:flex;gap:12px;flex-wrap:wrap">
+              <input required placeholder="Your name" name="name" style="flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit" />
+              <input required placeholder="Your email" name="email" type="email" style="flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit" />
+            </div>
+            <textarea required placeholder="Message" name="message" rows="4" style="margin-top:10px;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit"></textarea>
+            <div style="margin-top:10px;display:flex;align-items:center;justify-content:space-between">
+              <div class="muted small">Or email directly: <a href="mailto:vy849901@gmail.com" style="color:var(--accent)">vy849901@gmail.com</a></div>
+              <button type="submit" class="btn">Send message</button>
+            </div>
+          </form>
+
+          <div id="formMsg" class="muted small" aria-live="polite"></div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="muted small">© <span id="year"></span> Varinder Yadav — Frontend & Django Developer • <a href="https://github.com/varinderyadav" target="_blank" style="color:var(--accent)">GitHub</a> • <a href="https://www.linkedin.com/in/varinder-yadav-a933bb344/" target="_blank" style="color:var(--accent)">LinkedIn</a></div>
+    </footer>
+  </div>
+
+  <script>
+    // small client-side JS: contact form demo + dynamic year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const form = document.getElementById('contactForm');
+    const msg = document.getElementById('formMsg');
+    form.addEventListener('submit', (e)=>{
+      e.preventDefault();
+      // This is a demo: replace with real submission (Netlify forms, Formspree, or backend)
+      msg.textContent = 'Thanks! This demo form does not send email. Replace with your backend or a service like Formspree.';
+      form.reset();
+    })
+  </script>
+</body>
+</html>
